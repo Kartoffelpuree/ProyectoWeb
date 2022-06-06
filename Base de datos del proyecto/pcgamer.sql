@@ -110,20 +110,20 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2016_06_01_000001_create_oauth_auth_codes_table', 1),
-(4, '2016_06_01_000002_create_oauth_access_tokens_table', 1),
-(5, '2016_06_01_000003_create_oauth_refresh_tokens_table', 1),
-(6, '2016_06_01_000004_create_oauth_clients_table', 1),
-(7, '2016_06_01_000005_create_oauth_personal_access_clients_table', 1),
-(8, '2019_08_19_000000_create_failed_jobs_table', 1),
-(9, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(10, '2021_11_25_073024_create_branch_offices_table', 1),
-(11, '2021_11_25_073111_create_categories_table', 1),
-(12, '2021_11_25_073137_create_products_table', 1),
-(13, '2021_11_25_073211_create_sales_table', 1),
-(14, '2021_11_25_073354_create_employees_table', 1);
+(1, '2022_5_20_000000_create_users_table', 1),
+(2, '2022_5_20_100000_create_password_resets_table', 1),
+(3, '2022_5_20_000001_create_oauth_auth_codes_table', 1),
+(4, '2022_5_20_000002_create_oauth_access_tokens_table', 1),
+(5, '2022_5_20_000003_create_oauth_refresh_tokens_table', 1),
+(6, '2022_5_20_000004_create_oauth_clients_table', 1),
+(7, '2022_5_20_000005_create_oauth_personal_access_clients_table', 1),
+(8, '2022_5_20_000000_create_failed_jobs_table', 1),
+(9, '2022_5_20_000001_create_personal_access_tokens_table', 1),
+(10, '2022_5_20_073024_create_branch_offices_table', 1),
+(11, '2022_5_20_073111_create_categories_table', 1),
+(12, '2022_5_20_073137_create_products_table', 1),
+(13, '2022_5_20_073211_create_sales_table', 1),
+(14, '2022_5_20_073354_create_employees_table', 1);
 
 -- --------------------------------------------------------
 
@@ -393,20 +393,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `address`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Efrain', 'efra@gmail.com', NULL, '$2y$10$2lkHEcSZb9jYbx/CD.3gh.Nreh/5fu.5dBHYDghAkQ.Botr8ycxjq', 'Nueva Florida', NULL, '2021-11-27 04:04:36', '2021-11-27 04:04:36'),
-(2, 'Dario Maximiliano', 'Dario@gmail.com', NULL, '$2y$10$6Z9e6mnU/jE3xD3sTdnc1u2g5nXwD8fvl1LfnM/9Y8EQI5d83OSxS', 'Lomás del chalupin', NULL, '2021-11-27 18:34:34', '2021-11-27 18:34:34'),
-(3, 'Litzi Lopez', 'litziq@gmail.com', NULL, '$2y$10$gzsQPdcsGrJRBi5nYyKB3upzpK0Vmp5Uo0qf.92z8nFxFvBtmWkD6', 'Lomás del chalupin', NULL, '2021-11-27 18:34:45', '2021-11-27 18:34:45'),
-(4, 'Efrain', 'efra1120@hotmail.com', NULL, '$2y$10$x9S8UevxaEDTz0cA132H5u0tO1SuMI2c0aLlWQ1IliokWGP79p6P.', 'Esa dire', NULL, '2021-11-29 17:45:52', '2021-11-29 17:45:52'),
-(5, 'David', 'VilManDav@gmai.com', NULL, '$2y$10$K/hc7URcXhJfeeCBJ3cG.uFJT3gE5Vs7xGCBbbJYxeIAhFLK1wsEi', 'San Francisco de los vivero #2403 Balcones de Oriente', NULL, '2021-11-29 18:11:46', '2021-11-29 18:11:46'),
-(6, 'David', 'david@gmail.com', NULL, '$2y$10$yJPiRq10TVvLD6Uy4OOSQ.0Gfm7ZtzygHYs6IsMFt4.lQ6T0wrPbW', 'San Francisco de los vivero #2403 Balcones de Oriente', NULL, '2021-11-29 18:13:11', '2021-11-29 18:13:11'),
-(7, 'Antonio', 'Antonio@gmail.com', NULL, '$2y$10$DUXb9NwmverTh/7QFB1zF.91NW2RegowmYcmqjd/u.IiXM2u8JOBu', 'San Francisco de los vivero #2403 Balcones de Oriente', NULL, '2021-11-29 18:14:06', '2021-11-29 18:14:06'),
-(8, 'Juan Lopez', 'Juan@gmail.com', NULL, '$2y$10$O53aipjZQGti5be9T2vbm.87C9hkN9wiazAaXXuGtV1CgDNUckuNm', 'San Luis', NULL, '2021-11-29 18:59:37', '2021-11-29 18:59:37'),
-(9, 'Dario Lopez', 'dario1@gmail.com', NULL, '$2y$10$d.VcTao./1yZZDmf96BCV.LK/VBLnsgiyEUbMXN5euoYfWWwUOT9G', 'San Francisco de los vivero #2403 Balcones de Oriente', NULL, '2021-11-29 19:49:28', '2021-11-29 19:49:28'),
-(10, 'Daniela', 'Daniela@gmail.com', NULL, '$2y$10$uOR.WHabAWfeM.xEavKUZuS3qAp4S2XLS/qyoQ/sJOtT.uDoCW1Hq', 'Paseo del acantilado', NULL, '2021-11-29 20:21:47', '2021-11-29 20:21:47'),
-(11, 'Maria', 'Maria11@gmail.com', NULL, '$2y$10$I5Uc3kK1jF/cCYR3y9ApnOh6jcNAji1MrKM/f32UJnCSh1cyMxaNy', '155 Paseo de la cuesta', NULL, '2021-11-29 20:27:27', '2021-11-29 20:27:27'),
-(12, 'Mario', 'mario@gmail.com', NULL, '$2y$10$8M8K5iEJW6dgUdLivpicC.cJ5xGxelgA46sOgZYPImDDUQ7/yQVAu', '155 Paseo de la cuesta', NULL, '2021-11-29 20:48:43', '2021-11-29 20:48:43'),
-(13, 'Mariana', 'Mariana1@gmail.com', NULL, '$2y$10$/8Hp2l8rxRcxKWMEArvH0eSQg77tkjlipA3JIT4Uj/6/EsYsJvJoe', 'Paseo del acantilado', NULL, '2021-11-29 21:42:40', '2021-11-29 21:42:40'),
-(14, 'Pedro', 'pedro1@gmail.com', NULL, '$2y$10$w2mLHZkYTbgKbv2RR8huzeq.kjf4Z/8.EsfK0TIi00OESXUYKLjUW', '155 Paseo de la cuesta', NULL, '2021-11-29 22:06:07', '2021-11-29 22:06:07'),
-(15, 'Juan', 'Juan1@gmail.com', NULL, '$2y$10$RAP7/meiKQKm.v6UL1hpBe0qZmNntZrGKulEv3GaBpb3cFlrAgOj.', '155 Paseo de la cuesta', NULL, '2021-11-29 22:06:56', '2021-11-29 22:06:56');
+(4, 'Efrain', 'efra1120@hotmail.com', NULL, '$2y$10$x9S8UevxaEDTz0cA132H5u0tO1SuMI2c0aLlWQ1IliokWGP79p6P.', 'Esa dire', NULL, '2021-11-29 17:45:52', '2021-11-29 17:45:52');
 
 --
 -- Índices para tablas volcadas

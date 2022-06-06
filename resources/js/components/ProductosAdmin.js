@@ -128,7 +128,7 @@ const ShowProductosAdmin = (props) => {
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="example-custom-modal-styling-title">
-                        Custom Modal Styling
+                        Edit Products
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
